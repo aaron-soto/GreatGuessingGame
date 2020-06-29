@@ -1,0 +1,126 @@
+:root {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    --text-primary: #ebebeb;
+    --text-dark: #191919;
+    --bg-primary: #ebebeb;
+    --bg-dark: #191919;
+    --bg-hover: #dbdbdb;
+}
+
+body {
+    color: var(--text-primary);
+    background-color: var(--bg-dark);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  @media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+
+
+header {
+    height: 100px;
+    width: 100%;
+    background-color: var(--bg-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.divider {
+    height: auto;
+    width: 100%;
+    background-color: var(--bg-primary);
+}
+
+.divider-btns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 480px;
+    margin: auto;
+}
+
+.btn {
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all .3s ease-out;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--text-dark);
+}
+
+.btn:hover:not(.difficulty-active) {
+    background-color: var(--bg-hover);
+}
+
+.difficulty {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.difficulty-active {
+    background-color: var(--bg-dark);
+    color: var(--text-primary);
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 1fr;
+    padding: 20px 20px;
+    max-width: 480px;
+    margin: auto;
+}
+
+.gameboard {
+    margin: 60px 0;
+}
+
+.color-div {
+    background-color: aquamarine;
+    height: 150px;
+    margin: 5px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.gameboard p {
+    text-align: center;
+    color: var(--text-primary);
+    margin-top: 50px;
+}
+
+.gameboard h1 {
+    text-align: center;
+    color: var(--text-primary);
+}
